@@ -71,5 +71,5 @@ public class PigLatinTranslator
                word.startsWith ("pl") || word.startsWith ("wh") ||
                word.startsWith ("pr") || word.startsWith ("wr") );
    }
-}
+}
 
