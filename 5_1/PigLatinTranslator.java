@@ -10,7 +10,7 @@ public class PigLatinTranslator
    //-----------------------------------------------------------------
    //  Translates a sentence of words into Pig Latin.
    //-----------------------------------------------------------------
-   public String translate (String sentence)
+   public static String translate (String sentence)
    {
       String result = "";
       sentence = sentence.toLowerCase();
@@ -28,7 +28,7 @@ public class PigLatinTranslator
    //  the first letter or two are moved to the end of the word,
    //  and "ay" is appended.
    //-----------------------------------------------------------------
-   private String translateWord (String word)
+   private static String translateWord (String word)
    {
       String result = "";
       if (beginsWithVowel(word))
@@ -43,7 +43,7 @@ public class PigLatinTranslator
 //-----------------------------------------------------------------
    // Determines if the specified word begins with a vowel.
    //-----------------------------------------------------------------
-   private boolean beginsWithVowel (String word)
+   private static boolean beginsWithVowel (String word)
    {
       String vowels = "aeiou";
       char letter = word.charAt(0);
@@ -53,7 +53,7 @@ public class PigLatinTranslator
    //  Determines if the specified word begins with a particular
    //  two-character consonant blend.
    //-----------------------------------------------------------------
-   private boolean beginsWithBlend (String word)
+   private static boolean beginsWithBlend (String word)
    {
       return ( word.startsWith ("bl") || word.startsWith ("sc") ||
                word.startsWith ("br") || word.startsWith ("sh") ||
