@@ -1,6 +1,10 @@
 //********************************************************************
 //  Rational.java       Author: Lewis/Loftus/Cocking
 //
+// Brian Eyring and David Hatch
+// 11/11/11
+// Pragramming Assignment 5.2
+//
 //  Represents one rational number with a numerator and denominator.
 //********************************************************************
 
@@ -162,8 +166,10 @@ public class Rational implements Comparable<Rational>
 	@Override
 	public int compareTo(Rational obj)
 	{
+		//see if the objects are the equal
 		if (obj.equals(this))
 			return 0;
+		// see if the inputed object is less than the existing one
 		else if (obj.subtract(this).getNumerator() < 0)
 			return -1;
 		else 
