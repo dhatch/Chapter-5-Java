@@ -1,9 +1,21 @@
+/**
+ * @author David Hatch, Brian Eyring
+ * Assignment 5.6
+ */
+
+/**
+ * Abstract class with a standard implementation of the interface described in 
+ * {@link Lockable}.  When extending this class, call {@link #assertUnlocked()} in each method
+ * which must have unlock checking.
+ */
 public abstract class LockableBase {
     
     // Lockable Fields
     private boolean locked;
+    // this field is an Integer so we can store null value when the object has 
+    // no key
     private Integer lockKey;
-    //
+    
     
     // Lockable Methods
     public boolean setKey(int key) {
@@ -45,6 +57,11 @@ public abstract class LockableBase {
        return locked;
     }
 
+    /**
+     * Checks to ensure object is unlocked.  Call this in methods which
+     * object should be unlocked when called.
+     * @throws ObjectLockedException If the object is locked
+     */
     protected void assertUnlocked() {
        if (locked) {
           throw new ObjectLockedException("Can't call method. Object is locked. Call unlock(int key) prior to method call.");

@@ -1,3 +1,8 @@
+/**
+ * @author David Hatch, Brian Eyring
+ * Assignment 5_1
+ */
+
 //********************************************************************
 //  PigLatin.java       Author: Lewis/Loftus/Cocking
 //

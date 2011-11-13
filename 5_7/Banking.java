@@ -1,3 +1,8 @@
+/**
+ * Assignment 5.7
+ * @author David Hatch, Brian Eyring
+ */
+
 //********************************************************************
 //  Banking.java       Author: Lewis/Loftus/Cocking
 //

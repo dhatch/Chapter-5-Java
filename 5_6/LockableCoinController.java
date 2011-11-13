@@ -1,3 +1,9 @@
+/**
+ * @author David Hatch, Brian Eyring
+ * Assignment 5.6
+ */
+
+
 class LockableCoinController {
    public static void main(String[] args) {
       Coin coin = new Coin();
