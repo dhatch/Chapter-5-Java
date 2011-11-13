@@ -30,8 +30,8 @@ public class Rational implements Comparable<Rational>
 
       numerator = numer;
       denominator = denom;
-	  	reduce();
-	}
+        reduce();
+    }
 
    //-----------------------------------------------------------------
    //  Returns the numerator of this rational number.
@@ -79,7 +79,7 @@ public class Rational implements Comparable<Rational>
    public Rational subtract (Rational op2)
    {
       int commonDenominator = denominator * op2.getDenominator();
-		int numerator1 = numerator * op2.getDenominator();
+        int numerator1 = numerator * op2.getDenominator();
       int numerator2 = op2.getNumerator() * denominator;
       int difference = numerator1 - numerator2;
 
@@ -128,7 +128,7 @@ public class Rational implements Comparable<Rational>
       else
          if (denominator == 1)
             result = numerator + "";
-			else
+            else
             result = numerator + "/" + denominator;
       return result;
    }
@@ -163,18 +163,18 @@ public class Rational implements Comparable<Rational>
       return num1;
    }
 
-	@Override
-	public int compareTo(Rational obj)
-	{
-		//see if the objects are the equal
-		if (obj.equals(this))
-			return 0;
-		// see if the inputed object is less than the existing one
-		else if (obj.subtract(this).getNumerator() < 0)
-			return -1;
-		else 
-			return 1;
-		
-	}
+    @Override
+    public int compareTo(Rational obj)
+    {
+        //see if the objects are the equal
+        if (obj.equals(this))
+            return 0;
+        // see if the inputed object is less than the existing one
+        else if (obj.subtract(this).getNumerator() < 0)
+            return 1;
+        else 
+            return -1;
+        
+    }
 }
 
