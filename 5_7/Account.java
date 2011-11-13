@@ -1,3 +1,9 @@
+/**
+ * Assignment 5.7
+ * @author David Hatch, Brian Eyring
+ */
+
+
 //********************************************************************
 //  Account.java       Author: Lewis/Loftus/Cocking
 //

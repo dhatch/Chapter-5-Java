@@ -1,3 +1,9 @@
+/**
+ * @author David Hatch, Brian Eyring
+ * 
+ * Assignment 5.6
+ */
+
 //********************************************************************
 //  Coin.java       Author: Lewis/Loftus/Cocking
 //
